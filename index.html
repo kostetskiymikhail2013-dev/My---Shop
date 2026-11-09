@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Электронный магазин</h1>
+        <div class="cart-info">Корзина: <span id="cart-count">0</span> тов. | Итого: <span id="cart-total">0</span> сум</div>
+    </header>
+
+    <main>
+        <h2>Каталог товаров</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Смартфон</h3>
+                <p class="price">1 500 000 сум</p>
+                <button onclick="addToCart(1500000)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <h3>Наушники</h3>
+                <p class="price">300 000 сум</p>
+                <button onclick="addToCart(300000)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <h3>Умные часы</h3>
+                <p class="price">600 000 сум</p>
+                <button onclick="addToCart(600000)">В корзину</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
